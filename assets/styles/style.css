@@ -1,0 +1,201 @@
+:root {
+    --colorWHITE: #fff;
+    --colorBLACK: #000;
+}
+
+/* -- dark mode -- */
+@media (prefers-color-scheme: dark) {
+    body {
+        --colorWHITE: #000;
+        --colorBLACK: #fff;
+    }
+}
+
+/* -- all -- */
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    border-collapse: collapse;
+    vertical-align: top;
+    box-sizing: border-box;
+    /* user-select: none; */
+    /* -webkit-appearance: none; */
+    /* color: var(--colorBLACK) !important; */
+    font-weight: 300;
+    /* font-family: Helvetica, sans-serif; */
+    /* font-family: 'Shadows Into Light', cursive; */
+    /* font-family: 'Unna', serif; */
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+}
+
+*:focus {
+    outline: none;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 50%;
+    margin: auto;
+
+    /* background-color: #0d151a; */
+    /* background-image: url("https://www.transparenttextures.com/patterns/batthern.png"); */
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.hidden{
+    display: none !important;
+}
+header {
+    /* background: #ffc107; */
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header p {
+    text-align: center;
+}
+
+footer {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer button {
+    background-color: transparent;
+    /* background: #009688; */
+    /* color: #fff; */
+    font-size: 30px;
+    /* margin: 10px; */
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#sec_menu{
+    background-color: #ffc107;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+#sec_menu p{
+    padding: 20px;
+}
+
+#sec_menu p.p_title{
+    text-align: center;
+    font-size: 48px;
+    /* text-transform: capitalize; */
+    font-weight: bold;
+}
+#sec_menu p.p_sstitle{
+    text-align: center;
+    font-size: 14px;
+}
+
+#sec_menu nav{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    align-self: center;
+}
+#sec_menu nav button{
+    padding: 10px;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 80vh;
+}
+
+#p_operation {
+    /* background-color: #eee; */
+    /* border-bottom: 1px solid #111; */
+    padding: 20px;
+    font-size: 40px;
+    height: 10vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#p_result {
+    height: 10vh;
+    font-size: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div_result {
+    /* background-color: #2980b9; */
+    width: 350px;
+    height: 350px;
+    /* flex: 1; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+#div_result>button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #111;
+    width: calc(33.33% - 8px);
+    height: calc(33.33% - 8px);
+    margin: 4px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#div_result button.top {
+    /*
+    background-color: #8bc34a;
+    border: 1px solid #2e7d32;
+    color: #fff;
+    */
+    color: #8bc34a !important;
+}
+
+#div_result button[disabled] {
+    /*
+    background-color: tomato;
+    border: 1px solid #e53935;
+    color: #fff;
+    */
+    color: tomato !important;
+}
+
+/* -- mobile --*/
+@media screen and (max-width: 800px) {
+    body {
+        width: 100%;
+    }
+}

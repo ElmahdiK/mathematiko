@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags: HTML -->
+    <meta charset="UTF-8">
+    <title>mathematiko</title>
+    <meta name="author" content="EK" />
+    <meta name="title" content="EK">
+    <meta name="description" content="EK, Ingénieur d'études et développement, France" />
+    <meta name="keywords" content="EK, Developer, Web, France" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="full-screen" content="yes">
+    <meta name="theme-color" content="#fff">
+
+    <!-- meta tags: OPEN GRAPH -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="EK" />
+    <meta property="og:title" content="EK" />
+    <!-- <meta property="og:image" content="./assets/images/ek.jpg" /> -->
+    <meta property="og:description" content="Learn more about EK, a passionate developer!" />
+    <meta property="og:locale" content="en_US" />
+
+
+    <!-- link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!--  
+    <link rel="manifest" href="./manifest.json">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/logo/icon_16.ico" />
+    <link rel="apple-touch-icon" href="./assets/images/logo/icon_192.png">
+    <link rel="apple-touch-startup-image" href="./assets/images/logo/icon_192.png">
+    -->
+    <script src="assets/scripts/main.js"></script>
+</head>
+
+<body>
+    <section id="sec_menu">
+        <p class="p_title">MatheMatiko</p>
+        <nav>
+            <button id="bt-play">play</button>
+            <button id="bt-settings">settings</button>
+            <button id="bt-exit">exit</button>
+        </nav>
+        <p class="p_sstitle">Made with ❤️ by Elmahdi KORFED</p>
+    </section>
+    <section id="sec_game" class="hidden">
+        <header id="div_score">
+            <p>Time<br><time id="timer">00:00:00</time></p>
+            <p>Score<br><span id="sp_score">0</span>/10</p>
+        </header>
+        <main>
+            <!-- <button id="bt-random">random</button> -->
+            <p id="p_operation"></p>
+            <p id="p_result">😌</p>
+            <div id="div_result"></div>
+        </main>
+        <footer>
+            <button id="bt-menu">menu</button>
+            <button id="bt-start">start</button>
+        </footer>
+    </section>
+</body>
+
+</html>
